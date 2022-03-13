@@ -92,10 +92,8 @@ func _on_Hurtbox_area_entered(area: Area2D) -> void:
 	var playerHurtSound = PlayerHurtSound.instance()
 	get_tree().current_scene.add_child(playerHurtSound)
 
-
 func _on_Hurtbox_invincibility_started() -> void:
 	blinkAnimationPlayer.play("Start")
-
 
 func _on_Hurtbox_invincibility_ended() -> void:
 	blinkAnimationPlayer.play("Stop")
